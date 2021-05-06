@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UtsFinal">
+
+    //untuk menampilkan dosen pengampu
+    <TextView
+        android:id="@+id/inputandosenpengampu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:text="*Sesuaikan dengan data yang diisi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputansks" />
+
+    //untuk menampilkan ujian tengah semester
+    <TextView
+        android:id="@+id/ujiantengahsemester"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="UJIAN TENGAH SEMESTER"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    //untuk menampilkan tulisan semester genap
+    <TextView
+        android:id="@+id/semestergenap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="SEMESTER GENAP TA. 2020/2021"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ujiantengahsemester" />
+
+    //untuk menampilkan tulisan institut teknologi
+    <TextView
+        android:id="@+id/institutteknologi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="INSTITUT TEKNOLOGI DIRGANTARA ADISUTJIPTO"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/semestergenap" />
+
+    //untuk menampilkan tulisan program studi
+    <TextView
+        android:id="@+id/programstudi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="PROGRAM STUDI"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/institutteknologi" />
+
+    //untuk menampilkan tulisan input program studi
+    <TextView
+        android:id="@+id/inputprogramstudi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:text="*SESUAI DENGAN APA YANG KALIAN INPUT"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/institutteknologi" />
+
+    //untuk menampilkan tulisan nama mahasiswa
+    <TextView
+        android:id="@+id/namamahasiswa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Nama Mahasiswa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputprogramstudi" />
+
+    //untuk menampilkan tulisan nim mahasiswa
+    <TextView
+        android:id="@+id/nimmahasiswa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="NIM Mahasiswa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namamahasiswa" />
+
+    //untuk menampilkan tulisan mata kuliah
+    <TextView
+        android:id="@+id/matakuliah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Matakuliah"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nimmahasiswa" />
+
+    //untuk menampilkan tulisan sks
+    <TextView
+        android:id="@+id/sks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Sks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matakuliah" />
+
+    //untuk menampilkan tulisan dosen pengampu
+    <TextView
+        android:id="@+id/dosenpengampu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:text="Dosen Pengampu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sks" />
+
+    //untuk menampilkan tulisan tanggal pelaksanaan
+    <TextView
+        android:id="@+id/tanggalpelaksanaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:text="Tanggal Pelaksanaan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dosenpengampu" />
+
+    //untuk menampilkan tulisan kelas
+    <TextView
+        android:id="@+id/kelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Kelas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tanggalpelaksanaan" />
+
+    //untuk menampilkan tulisan inputan nama
+    <TextView
+        android:id="@+id/inputannama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="*Sesuaikan dengan data yang diisi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/programstudi" />
+
+    //untuk menampilkan tulisan inputan nim
+    <TextView
+        android:id="@+id/inputannim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:text="*Sesuaikan dengan data yang diisi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputannama" />
+
+    //untuk menampilkan tulisan inputan mata kuliah
+    <TextView
+        android:id="@+id/inputanmatakuliah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:text="*Sesuaikan dengan data yang diisi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/matakuliah"
+        app:layout_constraintTop_toBottomOf="@+id/inputannim" />
+
+    //untuk menampilkan tulisan inputan sks
+    <TextView
+        android:id="@+id/inputansks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:text="*Sesuaikan dengan data yang diisi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputanmatakuliah" />
+
+    //untuk menampilkan tulisan inputan tanggal pelaksanaan
+    <TextView
+        android:id="@+id/inputantanggalpelaksanaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:text="*Sesuaikan dengan data yang diisi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputandosenpengampu" />
+
+    //untuk menampilkan tulisan inputan kelas
+    <TextView
+        android:id="@+id/inputankelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:text="*Sesuaikan dengan data yang diisi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputantanggalpelaksanaan" />
+</androidx.constraintlayout.widget.ConstraintLayout>
